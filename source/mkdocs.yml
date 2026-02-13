@@ -1,1 +1,5 @@
 site_name: Сайт-портфолио занятия пятницы 13
+site_url: https://portfolio.com/
+nav:
+  - Home: index.md
+  - About: about.md
