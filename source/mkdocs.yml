@@ -1,5 +1,7 @@
 site_name: Сайт-портфолио занятия пятницы 13
 site_url: https://portfolio.com/
+theme:
+    name: dracula
 nav:
   - Home: index.md
   - About: about.md
