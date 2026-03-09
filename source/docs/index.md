@@ -1,16 +1,20 @@
-# отлично все заработало причина нашлась
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Лабораторные работы
 
-## Commands
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+<div class="project-card">
 
-## Project layout
+# Home
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+### Лабораторная работа 1
+
+Описание первой работы.  
+Первая лабораторная работа по теме "Основы программирования".
+
+**Технологии:** Python, Jupyter Notebook
+
+[Посмотреть проект →](link1)
+
+</div>
+
+</div>

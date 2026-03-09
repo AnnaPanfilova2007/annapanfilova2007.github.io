@@ -1,7 +1,39 @@
-site_name: Сайт-портфолио занятия пятницы 13
-site_url: https://portfolio.com/
+site_name: Панфилова Анна Константиновна
+site_url: https://твой-сайт.ru
 theme:
-    name: dracula
-nav:
-  - Home: index.md
-  - About: about.md
+  name: material
+  palette:
+    - scheme: default
+      primary: white       # или blue, indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+  font:
+    text: Roboto
+    code: Fira Code
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/твой-профиль
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/твой-профиль
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/твой-ник
+
+extra_css:
+  - stylesheets/extra.css
+
+copyright: "© 2025 Твое Имя"
