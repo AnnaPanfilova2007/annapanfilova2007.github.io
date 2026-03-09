@@ -1,4 +1,3 @@
-
 # Создание статического сайта
 
 Сайт: [https://annapanfilova2007.github.io/](https://annapanfilova2007.github.io/)  
@@ -7,7 +6,8 @@
 
 ## Цель
 
-Освоение основных принципов создания статического сайта с помощью генератора MkDocs и его развертывание на платформе GitHub Pages.
+Освоение основных принципов создания статического сайта с помощью генератора MkDocs и его развертывание на платформе
+GitHub Pages.
 
 ---
 
@@ -33,7 +33,6 @@
 
 - Оформить отчет о проделанной работе.
 
-
 ---
 
 ## Код
@@ -41,825 +40,1394 @@
 <p align="center">mkdocs.yml</p>
 
 ```python
-site_name: Панфилова Анна Константиновна
-site_url: https://твой-сайт.ru
+site_name: Панфилова
+Анна
+Константиновна
+site_url: https: // твой - сайт.ru
 nav:
-  - Об авторе: index.md
-  - Лабораторная работа 1: labs/Laba_1.md
+- Об
+авторе: index.md
+- Лабораторная
+работа
+1: labs / Laba_1.md
 theme:
-  name: material
-  palette:
-    - scheme: default
-      primary: white
-      accent: teal
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: teal
-      accent: teal
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-  features:
-    - navigation.tabs
-    - navigation.top
-    - search.highlight
-    - content.code.copy
-  font:
-    text: Roboto
-    code: Fira Code
+name: material
+palette:
+- scheme: default
+primary: white
+accent: teal
+toggle:
+icon: material / brightness - 7
+name: Switch
+to
+dark
+mode
+- scheme: slate
+primary: teal
+accent: teal
+toggle:
+icon: material / brightness - 4
+name: Switch
+to
+light
+mode
+features:
+- navigation.tabs
+- navigation.top
+- search.highlight
+- content.code.copy
+font:
+text: Roboto
+code: Fira
+Code
 
 extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/твой-профиль
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/твой-профиль
-    - icon: fontawesome/brands/telegram
-      link: https://t.me/твой-ник
+social:
+- icon: fontawesome / brands / github
+link: https: // github.com / твой - профиль
+- icon: fontawesome / brands / linkedin
+link: https: // linkedin.com / in / твой - профиль
+- icon: fontawesome / brands / telegram
+link: https: // t.me / твой - ник
 
 extra_css:
-  - stylesheets/extra.css
+- stylesheets / extra.css
 
 ```
 
 <p align="center">extra.css</p>
 
 ```python
-/* ----- ПЕРЕМЕННЫЕ ЦВЕТОВ ----- */
-:root {
-    --soft-pink: #f9e6e6;           /* очень светлый розовый */
-    --dusty-rose: #d4a5a5;          /* приглушенный розовый */
-    --warm-beige: #f5e6d3;          /* теплый бежевый */
-    --cream: #fff9f0;                /* кремовый */
-    --taupe: #b7a9a9;                /* серо-бежевый */
-    --soft-brown: #8b7a7a;           /* мягкий коричневый */
-    --blush: #ffe4e1;                /* румянец */
-    --ivory: #fffff0;                 /* слоновая кость */
+/ *----- ПЕРЕМЕННЫЕ
+ЦВЕТОВ - ---- * /
+:root
+{
+    --soft - pink:  # f9e6e6;           /* очень светлый розовый */
+        --dusty - rose:  # d4a5a5;          /* приглушенный розовый */
+--warm - beige:  # f5e6d3;          /* теплый бежевый */
+--cream:  # fff9f0;                /* кремовый */
+--taupe:  # b7a9a9;                /* серо-бежевый */
+--soft - brown:  # 8b7a7a;           /* мягкий коричневый */
+--blush:  # ffe4e1;                /* румянец */
+--ivory:  # fffff0;                 /* слоновая кость */
 }
 
-/* ===== ОСНОВНЫЕ ЭЛЕМЕНТЫ ===== */
+/ * == == = ОСНОВНЫЕ
+ЭЛЕМЕНТЫ == == = * /
 
-/* Фон всей страницы */
-.md-main {
-    background-color: var(--cream);
+/ *Фон
+всей
+страницы * /
+.md - main
+{
+    background - color: var(--cream);
 }
 
-/* Контентная область */
-.md-content {
-    background-color: white;
-    border-radius: 24px;
-    padding: 40px !important;
-    margin: 20px;
-    box-shadow: 0 10px 40px rgba(212, 165, 165, 0.15);
-    border: 1px solid rgba(212, 165, 165, 0.1);
+/ *Контентная
+область * /
+.md - content
+{
+    background - color: white;
+border - radius: 24
+px;
+padding: 40
+px !important;
+margin: 20
+px;
+box - shadow: 0
+10
+px
+40
+px
+rgba(212, 165, 165, 0.15);
+border: 1
+px
+solid
+rgba(212, 165, 165, 0.1);
 }
 
-/* ===== ШАПКА САЙТА ===== */
+/ * == == = ШАПКА
+САЙТА == == = * /
 
-.md-header {
-    background: linear-gradient(105deg,
-        #e8c1c1 0%,
-        #d4a5a5 40%,
-        #c49a9a 100%) !important;
-    box-shadow: 0 4px 20px rgba(212, 165, 165, 0.3);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+.md - header
+{
+    background: linear - gradient(105deg,
+    # e8c1c1 0%,
+    # d4a5a5 40%,
+    # c49a9a 100%) !important;
+box - shadow: 0
+4
+px
+20
+px
+rgba(212, 165, 165, 0.3);
+border - bottom: 1
+px
+solid
+rgba(255, 255, 255, 0.2);
 }
 
-.md-header__title {
+.md - header__title
+{
     color: white !important;
-    font-weight: 400;
-    letter-spacing: 0.8px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+font - weight: 400;
+letter - spacing: 0.8
+px;
+text - shadow: 0
+2
+px
+4
+px
+rgba(0, 0, 0, 0.1);
 }
 
-/* Кнопки в шапке */
-.md-header__button {
+/ *Кнопки
+в
+шапке * /
+.md - header__button
+{
     color: white !important;
 }
 
-.md-header__button:hover {
-    background-color: rgba(255, 255, 255, 0.25) !important;
-    border-radius: 50%;
+.md - header__button: hover
+{
+    background - color: rgba(255, 255, 255, 0.25) !important;
+border - radius: 50 %;
 }
 
-/* Логотип/название сайта */
-.md-header__topic {
+/ *Логотип / название
+сайта * /
+.md - header__topic
+{
     color: white !important;
-    font-weight: 400;
+font - weight: 400;
 }
 
-/* ===== БОКОВАЯ НАВИГАЦИЯ ===== */
+/ * == == = БОКОВАЯ
+НАВИГАЦИЯ == == = * /
 
-/* Контейнер бокового меню */
-.md-sidebar--primary .md-sidebar__scrollwrap {
-    background-color: rgba(255, 249, 240, 0.7);
-    border-radius: 20px;
-    margin: 20px 0;
-    padding: 10px 0;
+/ *Контейнер
+бокового
+меню * /
+.md - sidebar - -primary.md - sidebar__scrollwrap
+{
+    background - color: rgba(255, 249, 240, 0.7);
+border - radius: 20
+px;
+margin: 20
+px
+0;
+padding: 10
+px
+0;
 }
 
-/* Заголовки разделов в меню */
-.md-nav__title {
-    color: var(--soft-brown) !important;
-    font-weight: 500 !important;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-size: 0.8rem;
-    padding-left: 20px !important;
+/ *Заголовки
+разделов
+в
+меню * /
+.md - nav__title
+{
+    color: var(--soft - brown) !important;
+font - weight: 500 !important;
+text - transform: uppercase;
+letter - spacing: 1.5
+px;
+font - size: 0.8
+rem;
+padding - left: 20
+px !important;
 }
 
-/* Ссылки в меню */
-.md-nav__link {
+/ *Ссылки
+в
+меню * /
+.md - nav__link
+{
     color: var(--taupe) !important;
-    border-left: 3px solid transparent;
-    padding: 8px 0 8px 20px !important;
-    margin: 2px 0;
-    transition: all 0.3s ease;
-    font-size: 0.95rem;
+border - left: 3
+px
+solid
+transparent;
+padding: 8
+px
+0
+8
+px
+20
+px !important;
+margin: 2
+px
+0;
+transition: all
+0.3
+s
+ease;
+font - size: 0.95
+rem;
 }
 
-.md-nav__link:hover {
-    color: var(--dusty-rose) !important;
-    border-left-color: var(--dusty-rose);
-    background: linear-gradient(90deg, var(--soft-pink) 0%, transparent 90%);
+.md - nav__link: hover
+{
+    color: var(--dusty - rose) !important;
+border - left - color: var(--dusty - rose);
+background: linear - gradient(90
+deg, var(--soft - pink)
+0 %, transparent
+90 %);
 }
 
-.md-nav__link--active {
-    color: var(--dusty-rose) !important;
-    font-weight: 500 !important;
-    border-left-color: var(--dusty-rose);
-    background: linear-gradient(90deg, var(--soft-pink) 0%, transparent 90%);
+.md - nav__link - -active
+{
+    color: var(--dusty - rose) !important;
+font - weight: 500 !important;
+border - left - color: var(--dusty - rose);
+background: linear - gradient(90
+deg, var(--soft - pink)
+0 %, transparent
+90 %);
 }
 
-/* Вложенные пункты меню */
-.md-nav__item .md-nav__link {
-    padding-left: 35px !important;
+/ *Вложенные
+пункты
+меню * /
+.md - nav__item.md - nav__link
+{
+    padding - left: 35px !important;
 }
 
-/* Заголовок первого уровня */
-.md-content h1 {
-    color: var(--soft-brown) !important;
-    font-weight: 350 !important;
-    font-size: 2.5rem;
-    border-bottom: 2px solid var(--soft-pink);
-    padding-bottom: 15px;
-    margin-bottom: 35px;
-    margin-top: 0 !important;
-    letter-spacing: -0.5px;
+/ *Заголовок
+первого
+уровня * /
+.md - content
+h1
+{
+    color: var(--soft - brown) !important;
+font - weight: 350 !important;
+font - size: 2.5
+rem;
+border - bottom: 2
+px
+solid
+var(--soft - pink);
+padding - bottom: 15
+px;
+margin - bottom: 35
+px;
+margin - top: 0 !important;
+letter - spacing: -0.5
+px;
 }
 
-.md-content h1::before {
+.md - content
+h1::before
+{
     content: "✦ ";
-    color: var(--dusty-rose);
-    font-size: 2rem;
+color: var(--dusty - rose);
+font - size: 2
+rem;
 }
 
-/* Заголовок второго уровня */
-.md-content h2 {
-    color: var(--dusty-rose) !important;
-    font-weight: 400 !important;
-    font-size: 1.8rem;
-    margin-top: 45px;
-    margin-bottom: 20px;
-    letter-spacing: -0.3px;
+/ *Заголовок
+второго
+уровня * /
+.md - content
+h2
+{
+    color: var(--dusty - rose) !important;
+font - weight: 400 !important;
+font - size: 1.8
+rem;
+margin - top: 45
+px;
+margin - bottom: 20
+px;
+letter - spacing: -0.3
+px;
 }
 
-.md-content h2::after {
+.md - content
+h2::after
+{
     content: "";
-    display: block;
-    width: 60px;
-    height: 2px;
-    background: var(--soft-pink);
-    margin-top: 8px;
+display: block;
+width: 60
+px;
+height: 2
+px;
+background: var(--soft - pink);
+margin - top: 8
+px;
 }
 
-/* Заголовок третьего уровня */
-.md-content h3 {
+/ *Заголовок
+третьего
+уровня * /
+.md - content
+h3
+{
     color: var(--taupe) !important;
-    font-weight: 400 !important;
-    font-size: 1.4rem;
-    margin-top: 30px;
+font - weight: 400 !important;
+font - size: 1.4
+rem;
+margin - top: 30
+px;
 }
 
-/* Обычный текст */
-.md-content p {
-    color: #5a5a5a;
-    line-height: 1.9;
-    font-size: 1.05rem;
-    margin-bottom: 20px;
+/ *Обычный
+текст * /
+.md - content
+p
+{
+    color:  # 5a5a5a;
+        line - height: 1.9;
+font - size: 1.05
+rem;
+margin - bottom: 20
+px;
 }
 
-/* Выделенный текст */
-.md-content strong {
-    color: var(--soft-brown);
-    font-weight: 500;
+/ *Выделенный
+текст * /
+.md - content
+strong
+{
+    color: var(--soft - brown);
+font - weight: 500;
 }
 
-.md-content em {
-    color: var(--dusty-rose);
+.md - content
+em
+{
+    color: var(--dusty - rose);
 }
 
-/* Ссылки в тексте */
-.md-content a {
-    color: var(--dusty-rose) !important;
-    text-decoration: none;
-    border-bottom: 1px dashed var(--soft-pink);
-    transition: all 0.2s ease;
-    font-weight: 400;
+/ *Ссылки
+в
+тексте * /
+.md - content
+a
+{
+    color: var(--dusty - rose) !important;
+text - decoration: none;
+border - bottom: 1
+px
+dashed
+var(--soft - pink);
+transition: all
+0.2
+s
+ease;
+font - weight: 400;
 }
 
-.md-content a:hover {
-    color: var(--soft-brown) !important;
-    border-bottom-color: var(--soft-brown);
+.md - content
+a: hover
+{
+    color: var(--soft - brown) !important;
+border - bottom - color: var(--soft - brown);
 }
 
-/* ===== КАРТОЧКИ ДЛЯ ПРОЕКТОВ ===== */
+/ * == == = КАРТОЧКИ
+ДЛЯ
+ПРОЕКТОВ == == = * /
 
-.project-card {
+.project - card
+{
     background: white;
-    border-radius: 28px;
-    padding: 30px;
-    margin: 25px 0;
-    box-shadow: 0 8px 25px rgba(212, 165, 165, 0.1);
-    border: 1px solid var(--soft-pink);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    position: relative;
-    overflow: hidden;
+border - radius: 28
+px;
+padding: 30
+px;
+margin: 25
+px
+0;
+box - shadow: 0
+8
+px
+25
+px
+rgba(212, 165, 165, 0.1);
+border: 1
+px
+solid
+var(--soft - pink);
+transition: all
+0.4
+s
+cubic - bezier(0.175, 0.885, 0.32, 1.275);
+position: relative;
+overflow: hidden;
 }
 
-.project-card::before {
+.project - card::before
+{
     content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--dusty-rose), var(--soft-pink));
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 4
+px;
+background: linear - gradient(90
+deg, var(--dusty - rose), var(--soft - pink));
 }
 
-.project-card:hover {
+.project - card: hover
+{
     transform: translateY(-6px);
-    box-shadow: 0 20px 35px rgba(212, 165, 165, 0.2);
-    border-color: var(--dusty-rose);
+box - shadow: 0
+20
+px
+35
+px
+rgba(212, 165, 165, 0.2);
+border - color: var(--dusty - rose);
 }
 
-.project-card h3 {
-    margin-top: 0 !important;
-    color: var(--dusty-rose) !important;
-    font-size: 1.6rem;
-    margin-bottom: 15px;
+.project - card
+h3
+{
+    margin - top: 0 !important;
+color: var(--dusty - rose) !important;
+font - size: 1.6
+rem;
+margin - bottom: 15
+px;
 }
 
-.project-card h3 a {
-    border-bottom: none !important;
+.project - card
+h3
+a
+{
+    border - bottom: none !important;
 }
 
-.project-card p {
-    color: #6a6a6a;
-    line-height: 1.7;
+.project - card
+p
+{
+    color:  # 6a6a6a;
+        line - height: 1.7;
 }
 
-/* Кнопки в карточках */
-.project-card .md-button,
-.project-card button {
-    background: linear-gradient(105deg, var(--soft-pink), white) !important;
-    color: var(--soft-brown) !important;
-    border: 1.5px solid var(--dusty-rose) !important;
-    border-radius: 40px !important;
-    padding: 10px 28px !important;
-    font-size: 0.95rem !important;
-    font-weight: 400 !important;
-    transition: all 0.3s ease !important;
-    box-shadow: 0 4px 10px rgba(212, 165, 165, 0.1);
+/ *Кнопки
+в
+карточках * /
+.project - card.md - button,
+.project - card
+button
+{
+    background: linear - gradient(105deg, var(--soft - pink), white) !important;
+color: var(--soft - brown) !important;
+border: 1.5
+px
+solid
+var(--dusty - rose) !important;
+border - radius: 40
+px !important;
+padding: 10
+px
+28
+px !important;
+font - size: 0.95
+rem !important;
+font - weight: 400 !important;
+transition: all
+0.3
+s
+ease !important;
+box - shadow: 0
+4
+px
+10
+px
+rgba(212, 165, 165, 0.1);
 }
 
-.project-card .md-button:hover {
-    background: linear-gradient(105deg, var(--dusty-rose), #c49a9a) !important;
-    color: white !important;
-    border-color: var(--dusty-rose) !important;
-    box-shadow: 0 6px 15px rgba(212, 165, 165, 0.25);
-    transform: scale(1.02);
+.project - card.md - button: hover
+{
+    background: linear - gradient(105deg, var(--dusty - rose),  # c49a9a) !important;
+color: white !important;
+border - color: var(--dusty - rose) !important;
+box - shadow: 0
+6
+px
+15
+px
+rgba(212, 165, 165, 0.25);
+transform: scale(1.02);
 }
 
-/* ===== СПИСКИ ===== */
+/ * == == = СПИСКИ == == = * /
 
-.md-content ul, .md-content ol {
-    padding-left: 25px;
+.md - content
+ul,.md - content
+ol
+{
+    padding - left: 25px;
 }
 
-.md-content li {
-    color: #5a5a5a;
-    margin: 10px 0;
-    line-height: 1.8;
-    position: relative;
+.md - content
+li
+{
+    color:  # 5a5a5a;
+        margin: 10
+px
+0;
+line - height: 1.8;
+position: relative;
 }
 
-.md-content ul li::marker {
-    color: var(--dusty-rose);
+.md - content
+ul
+li::marker
+{
+    color: var(--dusty - rose);
 }
 
-.md-content ol li::marker {
-    color: var(--dusty-rose);
-    font-weight: 400;
+.md - content
+ol
+li::marker
+{
+    color: var(--dusty - rose);
+font - weight: 400;
 }
 
-/* ===== ЦИТАТЫ ===== */
+/ * == == = ЦИТАТЫ == == = * /
 
-.md-content blockquote {
-    border-left: 4px solid var(--dusty-rose);
-    background: var(--soft-pink);
-    padding: 15px 25px;
-    border-radius: 0 20px 20px 0;
-    margin: 25px 0;
-    color: var(--soft-brown);
-    font-style: italic;
+.md - content
+blockquote
+{
+    border - left: 4px solid var(--dusty - rose);
+background: var(--soft - pink);
+padding: 15
+px
+25
+px;
+border - radius: 0
+20
+px
+20
+px
+0;
+margin: 25
+px
+0;
+color: var(--soft - brown);
+font - style: italic;
 }
 
-/* ===== ТАБЛИЦЫ ===== */
+/ * == == = ТАБЛИЦЫ == == = * /
 
-.md-typeset table:not([class]) {
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(212, 165, 165, 0.1);
-    border: 1px solid var(--soft-pink);
+.md - typeset
+table: not ([
+
+
+class ]) {
+border-radius: 18
+
+
+px;
+overflow: hidden;
+box - shadow: 0
+5
+px
+20
+px
+rgba(212, 165, 165, 0.1);
+border: 1
+px
+solid
+var(--soft - pink);
 }
 
-.md-typeset table:not([class]) th {
-    background: linear-gradient(105deg, var(--soft-pink), #ffe4e1);
-    color: var(--soft-brown);
-    font-weight: 500;
-    font-size: 1rem;
-    padding: 15px 20px;
+.md - typeset
+table: not ([class])
+th
+{
+    background: linear - gradient(105deg, var(--soft - pink),  # ffe4e1);
+color: var(--soft - brown);
+font - weight: 500;
+font - size: 1
+rem;
+padding: 15
+px
+20
+px;
 }
 
-.md-typeset table:not([class]) td {
-    border-top: 1px solid var(--soft-pink);
-    padding: 12px 20px;
-    color: #5a5a5a;
+.md - typeset
+table: not ([
+
+
+class ]) td {
+border-top: 1
+
+
+px
+solid
+var(--soft - pink);
+padding: 12
+px
+20
+px;
+color:  # 5a5a5a;
 }
 
-.md-typeset table:not([class]) tr:hover td {
-    background-color: rgba(249, 230, 230, 0.3);
+.md - typeset
+table: not ([class])
+tr: hover
+td
+{
+    background - color: rgba(249, 230, 230, 0.3);
 }
 
-/* ===== КОД ===== */
+/ * == == = КОД == == = * /
 
-/* Блоки кода */
-.md-typeset pre {
-    border-radius: 16px;
-    border: 1px solid var(--soft-pink);
-    background: #faf7f2 !important;
+/ *Блоки
+кода * /
+.md - typeset
+pre
+{
+    border - radius: 16px;
+border: 1
+px
+solid
+var(--soft - pink);
+background:  # faf7f2 !important;
 }
 
-.md-typeset code {
-    color: var(--soft-brown);
-    background: var(--soft-pink);
-    border-radius: 8px;
-    padding: 3px 8px;
-    font-size: 0.9rem;
+.md - typeset
+code
+{
+    color: var(--soft - brown);
+background: var(--soft - pink);
+border - radius: 8
+px;
+padding: 3
+px
+8
+px;
+font - size: 0.9
+rem;
 }
 
-/* Кнопка копирования кода */
-.md-clipboard {
-    color: var(--dusty-rose) !important;
+/ *Кнопка
+копирования
+кода * /
+.md - clipboard
+{
+    color: var(--dusty - rose) !important;
 }
 
-.md-clipboard:hover {
-    color: var(--soft-brown) !important;
+.md - clipboard: hover
+{
+    color: var(--soft - brown) !important;
 }
 
-/* ===== ПОИСК ===== */
+/ * == == = ПОИСК == == = * /
 
-.md-search__form {
-    background-color: rgba(255, 255, 255, 0.2) !important;
-    border-radius: 40px !important;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+.md - search__form
+{
+    background - color: rgba(255, 255, 255, 0.2) !important;
+border - radius: 40
+px !important;
+border: 1
+px
+solid
+rgba(255, 255, 255, 0.3);
 }
 
-.md-search__input::placeholder {
+.md - search__input::placeholder
+{
     color: rgba(255, 255, 255, 0.8) !important;
 }
 
-.md-search-result__link {
-    border-radius: 12px !important;
+.md - search - result__link
+{
+    border - radius: 12px !important;
 }
 
-.md-search-result__link:hover {
-    background-color: var(--soft-pink) !important;
+.md - search - result__link: hover
+{
+    background - color: var(--soft - pink) !important;
 }
 
-.md-search-result__more summary {
-    color: var(--dusty-rose) !important;
+.md - search - result__more
+summary
+{
+    color: var(--dusty - rose) !important;
 }
 
-/* ===== ПОДВАЛ ===== */
+/ * == == = ПОДВАЛ == == = * /
 
-.md-footer {
-    background: linear-gradient(135deg,
-        #b7a9a9 0%,
-        #d4a5a5 100%) !important;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+.md - footer
+{
+    background: linear - gradient(135deg,
+# b7a9a9 0%,
+# d4a5a5 100%) !important;
+border - top: 1
+px
+solid
+rgba(255, 255, 255, 0.2);
 }
 
-.md-footer-nav {
-    background-color: rgba(0, 0, 0, 0.1);
+.md - footer - nav
+{
+background - color: rgba(0, 0, 0, 0.1);
 }
 
-.md-footer-meta {
-    background-color: rgba(139, 122, 122, 0.5) !important;
+.md - footer - meta
+{
+background - color: rgba(139, 122, 122, 0.5) !important;
 }
 
-.md-footer-copyright {
-    color: rgba(255, 255, 255, 0.8) !important;
+.md - footer - copyright
+{
+color: rgba(255, 255, 255, 0.8) !important;
 }
 
-.md-footer-copyright a {
-    color: white !important;
-    border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+.md - footer - copyright
+a
+{
+color: white !important;
+border - bottom: 1
+px
+dashed
+rgba(255, 255, 255, 0.5);
 }
 
-/* ===== КНОПКИ ПЕРЕКЛЮЧЕНИЯ ТЕМ ===== */
+/ * == == = КНОПКИ
+ПЕРЕКЛЮЧЕНИЯ
+ТЕМ == == = * /
 
-.md-header__option {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 30px;
-    padding: 2px;
+.md - header__option
+{
+background - color: rgba(255, 255, 255, 0.1);
+border - radius: 30
+px;
+padding: 2
+px;
 }
 
-/* ===== АНИМАЦИИ ===== */
+/ * == == = АНИМАЦИИ == == = * /
 
-.md-content {
-    animation: fadeSlideUp 0.6s ease-out;
+.md - content
+{
+animation: fadeSlideUp
+0.6
+s
+ease - out;
 }
 
-@keyframes fadeSlideUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
+@keyframes
+
+
+fadeSlideUp
+{
+from
+
+{
+    opacity: 0;
+transform: translateY(30
+px);
+}
+to
+{
+    opacity: 1;
+transform: translateY(0);
+}
+}
+
+.project - card
+{
+animation: fadeIn
+0.8
+s
+ease - out;
+}
+
+@keyframes
+
+
+fadeIn
+{
+from
+
+{
+    opacity: 0;
+transform: scale(0.98);
+}
+to
+{
+    opacity: 1;
+transform: scale(1);
+}
+}
+
+/ * == == = УКРАШЕНИЯ == == = * /
+
+/ *Легкие
+точки
+на
+фоне * /
+.md - main::before
+{
+content: "";
+position: fixed;
+top: 0;
+left: 0;
+width: 100 %;
+height: 100 %;
+pointer - events: none;
+background - image: radial - gradient(var(--soft - pink)
+1
+px, transparent
+1
+px);
+background - size: 40
+px
+40
+px;
+opacity: 0.3;
+z - index: 0;
+}
+
+/ *Декоративный
+элемент
+внизу
+страницы * /
+.md - content::after
+{
+content: "✦ ✦ ✦";
+display: block;
+text - align: center;
+color: var(--soft - pink);
+font - size: 1.2
+rem;
+letter - spacing: 8
+px;
+margin - top: 50
+px;
+opacity: 0.6;
+}
+
+/ * == == = ЧЕРНО - РОЗОВАЯ
+ТЕМА(при
+переключении
+на
+темную) == == = * /
+
+[data - md - color - scheme = "slate"] {
+--md - default - bg - color:  # 1a1a1a;        /* глубокий черный фон */
+--md - default - fg - color:  # f0e6e6;        /* светлый текст */
+--md - default - fg - color - -light:  # b3a3a3;
+--md - primary - fg - color:  # c43e3e;        /* насыщенный розовый */
+--md - accent - fg - color:  # ff6b6b;          /* яркий розовый */
+}
+
+/ *Общий
+фон * /
+[data - md - color - scheme = "slate"].md - main
+{
+background: linear - gradient(135
+deg,  # 1a1a1a 0%, #2d1a1a 100%);
+}
+
+/ *Контентная
+область * /
+[data - md - color - scheme = "slate"].md - content
+{
+    background - color:  # 242424;
+        border: 1
+px
+solid  # ffb3b3;
+box - shadow: 0
+10
+px
+40
+px
+rgba(196, 62, 62, 0.15);
+}
+
+/ *Шапка
+сайта
+в
+темной
+теме * /
+[data - md - color - scheme = "slate"].md - header
+{
+    background: linear - gradient(105deg,
+    # 2d0f0f 0%,
+    # 3d1a1a 40%,
+    # 2d1a1a 100%) !important;
+border - bottom: 1
+px
+solid  # c43e3e;
+box - shadow: 0
+4
+px
+20
+px
+rgba(196, 62, 62, 0.3);
+}
+
+/ *Текст
+в
+шапке * /
+[data - md - color - scheme = "slate"].md - header__title
+{
+    color:  # ffb3b3 !important;
+        text - shadow: 0
+0
+10
+px
+rgba(196, 62, 62, 0.5);
+}
+
+/ *Боковое
+меню * /
+[data - md - color - scheme = "slate"].md - sidebar - -primary.md - sidebar__scrollwrap
+{
+    background - color: rgba(36, 36, 36, 0.9);
+}
+
+[data - md - color - scheme = "slate"].md - nav__title
+{
+    color:  # c43e3e !important;
+}
+
+[data - md - color - scheme = "slate"].md - nav__link
+{
+    color:  # b3a3a3 !important;
+}
+
+[data - md - color - scheme = "slate"].md - nav__link: hover
+{
+    color:  # ff6b6b !important;
+        border - left - color:  # c43e3e;
+background: linear - gradient(90
+deg,  # 3d1a1a 0%, transparent 90%);
+}
+
+[data - md - color - scheme = "slate"].md - nav__link - -active
+{
+    color:  # ff6b6b !important;
+        border - left - color:  # c43e3e;
+background: linear - gradient(90
+deg,  # 3d1a1a 0%, transparent 90%);
+}
+
+/ *Заголовки * /
+   [data - md - color - scheme = "slate"].md - content
+h1
+{
+    color:  # ffb3b3 !important;
+        border - bottom - color:  # 3d2a2a;
+}
+
+[data - md - color - scheme = "slate"].md - content
+h1::before
+{
+    color:  # c43e3e;
+}
+
+[data - md - color - scheme = "slate"].md - content
+h2
+{
+    color:  # ff9999 !important;
+}
+
+[data - md - color - scheme = "slate"].md - content
+h2::after
+{
+    background:  # 3d2a2a;
+}
+
+[data - md - color - scheme = "slate"].md - content
+h3
+{
+    color:  # b36666 !important;
+}
+
+/ * Текст * /
+[data - md - color - scheme = "slate"].md - content
+p,
+[data - md - color - scheme = "slate"].md - content
+li
+{
+    color:  # d9d9d9;
+}
+
+[data - md - color - scheme = "slate"].md - content
+strong
+{
+    color:  # ffb3b3;
+}
+
+[data - md - color - scheme = "slate"].md - content
+em
+{
+    color:  # ff9999;
+}
+
+/ * Ссылки * /
+[data - md - color - scheme = "slate"].md - content
+a
+{
+    color:  # ff9999 !important;
+        border - bottom - color:  # 4d3333;
+}
+
+[data - md - color - scheme = "slate"].md - content
+a: hover
+{
+    color:  # ff4d4d !important;
+        border - bottom - color:  # c43e3e;
+}
+
+/ *Карточки
+проектов * /
+[data - md - color - scheme = "slate"].project - card
+{
+    background:  # 242424;
+        border: 1
+px
+solid  # 3d2a2a;
+box - shadow: 0
+8
+px
+25
+px
+rgba(196, 62, 62, 0.15);
+}
+
+[data - md - color - scheme = "slate"].project - card::before
+{
+    background: linear - gradient(90deg,  # c43e3e, #ff6b6b);
+}
+
+[data - md - color - scheme = "slate"].project - card: hover
+{
+    border - color:  # c43e3e;
+        box - shadow: 0
+20
+px
+35
+px
+rgba(196, 62, 62, 0.25);
+}
+
+[data - md - color - scheme = "slate"].project - card
+h3
+{
+    color:  # ff9999 !important;
+}
+
+[data - md - color - scheme = "slate"].project - card
+p
+{
+    color:  # b3a3a3;
+}
+
+/ * Кнопки
+в
+карточках * /
+[data - md - color - scheme = "slate"].project - card.md - button
+{
+    background: linear - gradient(105deg,  # 2d1a1a, #242424) !important;
+color:  # ff9999 !important;
+border - color:  # c43e3e !important;
+}
+
+[data - md - color - scheme = "slate"].project - card.md - button: hover
+{
+    background: linear - gradient(105deg,  # c43e3e, #ff6b6b) !important;
+color: white !important;
+box - shadow: 0
+6
+px
+15
+px
+rgba(196, 62, 62, 0.4);
+}
+
+/ *Цитаты * /
+   [data - md - color - scheme = "slate"].md - content
+blockquote
+{
+    border - left - color:  # c43e3e;
+        background:  # 2d1a1a;
+color:  # ffb3b3;
+}
+
+/ *Таблицы * /
+   [data - md - color - scheme = "slate"].md - typeset
+table: not ([
+
+
+class ]) {
+border-color:  # 3d2a2a;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+
+
+[data - md - color - scheme = "slate"].md - typeset
+table: not ([class])
+th
+{
+    background: linear - gradient(105deg,  # 2d1a1a, #1a0f0f);
+color:  # ffb3b3;
 }
 
-.project-card {
-    animation: fadeIn 0.8s ease-out;
+[data - md - color - scheme = "slate"].md - typeset
+table: not ([
+
+
+class ]) td {
+border-top-color:  # 3d2a2a;
+    color:  # d9d9d9;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.98);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+[data - md - color - scheme = "slate"].md - typeset
+table: not ([class])
+tr: hover
+td
+{
+    background - color:  # 2d1a1a;
 }
 
-/* ===== УКРАШЕНИЯ ===== */
-
-/* Легкие точки на фоне */
-.md-main::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    background-image: radial-gradient(var(--soft-pink) 1px, transparent 1px);
-    background-size: 40px 40px;
-    opacity: 0.3;
-    z-index: 0;
+/ * Код * /
+[data - md - color - scheme = "slate"].md - typeset
+pre
+{
+    background:  # 2d2d2d !important;
+        border - color:  # 3d2a2a;
 }
 
-/* Декоративный элемент внизу страницы */
-.md-content::after {
-    content: "✦ ✦ ✦";
-    display: block;
-    text-align: center;
-    color: var(--soft-pink);
-    font-size: 1.2rem;
-    letter-spacing: 8px;
-    margin-top: 50px;
-    opacity: 0.6;
+[data - md - color - scheme = "slate"].md - typeset
+code
+{
+    background:  # 3d1a1a;
+        color:  # ffb3b3;
 }
 
-/* ===== ЧЕРНО-РОЗОВАЯ ТЕМА (при переключении на темную) ===== */
-
-[data-md-color-scheme="slate"] {
-    --md-default-bg-color: #1a1a1a;        /* глубокий черный фон */
-    --md-default-fg-color: #f0e6e6;        /* светлый текст */
-    --md-default-fg-color--light: #b3a3a3;
-    --md-primary-fg-color: #c43e3e;        /* насыщенный розовый */
-    --md-accent-fg-color: #ff6b6b;          /* яркий розовый */
+/ *Поиск * /
+   [data - md - color - scheme = "slate"].md - search__form
+{
+    background - color:  # 3d2a2a !important;
+        border - color:  # c43e3e;
 }
 
-/* Общий фон */
-[data-md-color-scheme="slate"] .md-main {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d1a1a 100%);
+[data - md - color - scheme = "slate"].md - search - result__link
+{
+    color:  # ffb3b3 !important;
 }
 
-/* Контентная область */
-[data-md-color-scheme="slate"] .md-content {
-    background-color: #242424;
-    border: 1px solid #ffb3b3;
-    box-shadow: 0 10px 40px rgba(196, 62, 62, 0.15);
+[data - md - color - scheme = "slate"].md - search - result__link: hover
+{
+    background - color:  # 3d1a1a !important;
 }
 
-/* Шапка сайта в темной теме */
-[data-md-color-scheme="slate"] .md-header {
-    background: linear-gradient(105deg,
-        #2d0f0f 0%,
-        #3d1a1a 40%,
-        #2d1a1a 100%) !important;
-    border-bottom: 1px solid #c43e3e;
-    box-shadow: 0 4px 20px rgba(196, 62, 62, 0.3);
+[data - md - color - scheme = "slate"].md - search - result__article - -document::before
+{
+    color:  # c43e3e !important;
 }
 
-/* Текст в шапке */
-[data-md-color-scheme="slate"] .md-header__title {
-    color: #ffb3b3 !important;
-    text-shadow: 0 0 10px rgba(196, 62, 62, 0.5);
+[data - md - color - scheme = "slate"].md - search - result__more
+summary
+{
+    color:  # ff9999 !important;
 }
 
-/* Боковое меню */
-[data-md-color-scheme="slate"] .md-sidebar--primary .md-sidebar__scrollwrap {
-    background-color: rgba(36, 36, 36, 0.9);
+/ * Подвал * /
+[data - md - color - scheme = "slate"].md - footer
+{
+    background: linear - gradient(135deg,
+# 1a0f0f 0%,
+# 2d1a1a 100%) !important;
+border - top - color:  # c43e3e;
 }
 
-[data-md-color-scheme="slate"] .md-nav__title {
-    color: #c43e3e !important;
+[data - md - color - scheme = "slate"].md - footer - meta
+{
+background - color:  # 0f0f0f !important;
 }
 
-[data-md-color-scheme="slate"] .md-nav__link {
-    color: #b3a3a3 !important;
+[data - md - color - scheme = "slate"].md - footer - copyright
+{
+color:  # b36666 !important;
 }
 
-[data-md-color-scheme="slate"] .md-nav__link:hover {
-    color: #ff6b6b !important;
-    border-left-color: #c43e3e;
-    background: linear-gradient(90deg, #3d1a1a 0%, transparent 90%);
+[data - md - color - scheme = "slate"].md - footer - copyright
+a
+{
+color:  # ff9999 !important;
 }
 
-[data-md-color-scheme="slate"] .md-nav__link--active {
-    color: #ff6b6b !important;
-    border-left-color: #c43e3e;
-    background: linear-gradient(90deg, #3d1a1a 0%, transparent 90%);
-}
-
-/* Заголовки */
-[data-md-color-scheme="slate"] .md-content h1 {
-    color: #ffb3b3 !important;
-    border-bottom-color: #3d2a2a;
-}
-
-[data-md-color-scheme="slate"] .md-content h1::before {
-    color: #c43e3e;
-}
-
-[data-md-color-scheme="slate"] .md-content h2 {
-    color: #ff9999 !important;
-}
-
-[data-md-color-scheme="slate"] .md-content h2::after {
-    background: #3d2a2a;
-}
-
-[data-md-color-scheme="slate"] .md-content h3 {
-    color: #b36666 !important;
-}
-
-/* Текст */
-[data-md-color-scheme="slate"] .md-content p,
-[data-md-color-scheme="slate"] .md-content li {
-    color: #d9d9d9;
-}
-
-[data-md-color-scheme="slate"] .md-content strong {
-    color: #ffb3b3;
-}
-
-[data-md-color-scheme="slate"] .md-content em {
-    color: #ff9999;
-}
-
-/* Ссылки */
-[data-md-color-scheme="slate"] .md-content a {
-    color: #ff9999 !important;
-    border-bottom-color: #4d3333;
-}
-
-[data-md-color-scheme="slate"] .md-content a:hover {
-    color: #ff4d4d !important;
-    border-bottom-color: #c43e3e;
-}
-
-/* Карточки проектов */
-[data-md-color-scheme="slate"] .project-card {
-    background: #242424;
-    border: 1px solid #3d2a2a;
-    box-shadow: 0 8px 25px rgba(196, 62, 62, 0.15);
-}
-
-[data-md-color-scheme="slate"] .project-card::before {
-    background: linear-gradient(90deg, #c43e3e, #ff6b6b);
-}
-
-[data-md-color-scheme="slate"] .project-card:hover {
-    border-color: #c43e3e;
-    box-shadow: 0 20px 35px rgba(196, 62, 62, 0.25);
-}
-
-[data-md-color-scheme="slate"] .project-card h3 {
-    color: #ff9999 !important;
-}
-
-[data-md-color-scheme="slate"] .project-card p {
-    color: #b3a3a3;
-}
-
-/* Кнопки в карточках */
-[data-md-color-scheme="slate"] .project-card .md-button {
-    background: linear-gradient(105deg, #2d1a1a, #242424) !important;
-    color: #ff9999 !important;
-    border-color: #c43e3e !important;
-}
-
-[data-md-color-scheme="slate"] .project-card .md-button:hover {
-    background: linear-gradient(105deg, #c43e3e, #ff6b6b) !important;
-    color: white !important;
-    box-shadow: 0 6px 15px rgba(196, 62, 62, 0.4);
-}
-
-/* Цитаты */
-[data-md-color-scheme="slate"] .md-content blockquote {
-    border-left-color: #c43e3e;
-    background: #2d1a1a;
-    color: #ffb3b3;
-}
-
-/* Таблицы */
-[data-md-color-scheme="slate"] .md-typeset table:not([class]) {
-    border-color: #3d2a2a;
-}
-
-[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
-    background: linear-gradient(105deg, #2d1a1a, #1a0f0f);
-    color: #ffb3b3;
-}
-
-[data-md-color-scheme="slate"] .md-typeset table:not([class]) td {
-    border-top-color: #3d2a2a;
-    color: #d9d9d9;
-}
-
-[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:hover td {
-    background-color: #2d1a1a;
-}
-
-/* Код */
-[data-md-color-scheme="slate"] .md-typeset pre {
-    background: #2d2d2d !important;
-    border-color: #3d2a2a;
-}
-
-[data-md-color-scheme="slate"] .md-typeset code {
-    background: #3d1a1a;
-    color: #ffb3b3;
-}
-
-/* Поиск */
-[data-md-color-scheme="slate"] .md-search__form {
-    background-color: #3d2a2a !important;
-    border-color: #c43e3e;
-}
-
-[data-md-color-scheme="slate"] .md-search-result__link {
-    color: #ffb3b3 !important;
-}
-
-[data-md-color-scheme="slate"] .md-search-result__link:hover {
-    background-color: #3d1a1a !important;
-}
-
-[data-md-color-scheme="slate"] .md-search-result__article--document::before {
-    color: #c43e3e !important;
-}
-
-[data-md-color-scheme="slate"] .md-search-result__more summary {
-    color: #ff9999 !important;
-}
-
-/* Подвал */
-[data-md-color-scheme="slate"] .md-footer {
-    background: linear-gradient(135deg,
-        #1a0f0f 0%,
-        #2d1a1a 100%) !important;
-    border-top-color: #c43e3e;
-}
-
-[data-md-color-scheme="slate"] .md-footer-meta {
-    background-color: #0f0f0f !important;
-}
-
-[data-md-color-scheme="slate"] .md-footer-copyright {
-    color: #b36666 !important;
-}
-
-[data-md-color-scheme="slate"] .md-footer-copyright a {
-    color: #ff9999 !important;
-}
-
-/* Украшения */
-[data-md-color-scheme="slate"] .md-main::before {
-    background-image: radial-gradient(#c43e3e 1px, transparent 1px);
+/ *Украшения * /
+   [data - md - color - scheme = "slate"].md - main::before
+{
+background - image: radial - gradient(  # c43e3e 1px, transparent 1px);
     opacity: 0.15;
 }
 
-[data-md-color-scheme="slate"] .md-content::after {
-    color: #3d2a2a;
+[data - md - color - scheme = "slate"].md - content::after
+{
+    color:  # 3d2a2a;
 }
 
-/* Свитчер темы (кнопка переключения) */
-[data-md-color-scheme="slate"] .md-header__option {
-    background-color: #3d2a2a;
+/ *Свитчер
+темы(кнопка
+переключения) * /
+[data - md - color - scheme = "slate"].md - header__option
+{
+    background - color:  # 3d2a2a;
 }
 
-[data-md-color-scheme="slate"] .md-header__button[for="__palette_2"] {
-    color: #ff9999 !important;
-}
-/* Глобальные настройки переноса */
-:root {
-    --md-text-overflow-wrap: break-word;
-}
-
-/* Основной контент */
-.md-content {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto; /* автоматические дефисы при переносе */
-}
-
-/* Заголовки */
-.md-content h1, 
-.md-content h2, 
-.md-content h3,
-.md-content h4 {
-    overflow-wrap: break-word;
-    word-break: break-word;
-    hyphens: none; /* для заголовков дефисы лучше отключить */
+[data - md - color - scheme = "slate"].md - header__button[
+for ="__palette_2"] {
+color:  # ff9999 !important;
+    }
+/ *Глобальные
+настройки
+переноса * /
+:root
+{
+    --md - text - overflow - wrap:
+break
+-word;
 }
 
-/* Ссылки */
-.md-content a {
-    overflow-wrap: break-word;
-    word-break: break-all; /* для длинных URL */
+/ *Основной
+контент * /
+.md - content
+{
+overflow - wrap:
+break
+-word;
+word - wrap:
+break
+-word;
+hyphens: auto; / *автоматические
+дефисы
+при
+переносе * /
 }
 
-/* Код */
-.md-typeset pre code {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    overflow-x: auto;
-    max-width: 100%;
-    box-sizing: border-box;
+/ *Заголовки * /
+.md - content
+h1,
+.md - content
+h2,
+.md - content
+h3,
+.md - content
+h4
+{
+overflow - wrap:
+break
+-word;
+word -
+break: break
+-word;
+hyphens: none; / *для
+заголовков
+дефисы
+лучше
+отключить * /
 }
 
-/* Таблицы */
-.md-typeset table {
-    display: block;
-    overflow-x: auto;
-    white-space: normal;
+/ *Ссылки * /
+.md - content
+a
+{
+overflow - wrap:
+break
+-word;
+word -
+break: break
+-all; / *для
+длинных
+URL * /
 }
 
-.md-typeset table td,
-.md-typeset table th {
-    overflow-wrap: break-word;
-    word-break: break-word;
-    min-width: 100px;
-    max-width: 300px;
+/ *Код * /
+.md - typeset
+pre
+code
+{
+white - space: pre - wrap;
+word - wrap:
+break
+-word;
+overflow - x: auto;
+max - width: 100 %;
+box - sizing: border - box;
 }
 
-/* Боковое меню */
-.md-nav__link {
-    overflow-wrap: break-word;
-    word-break: break-word;
-    white-space: normal;
+/ *Таблицы * /
+.md - typeset
+table
+{
+display: block;
+overflow - x: auto;
+white - space: normal;
 }
 
-/* Для элементов с очень длинными именами */
-.doc-object-name {
-    word-break: break-all; /* для автоматически генерируемых имен функций/классов */
+.md - typeset
+table
+td,
+.md - typeset
+table
+th
+{
+overflow - wrap:
+break
+-word;
+word -
+break: break
+-word;
+min - width: 100
+px;
+max - width: 300
+px;
+}
+
+/ *Боковое
+меню * /
+.md - nav__link
+{
+overflow - wrap:
+break
+-word;
+word -
+break: break
+-word;
+white - space: normal;
+}
+
+/ *Для
+элементов
+с
+очень
+длинными
+именами * /
+.doc - object - name
+{
+word -
+break: break
+-all; / *для
+автоматически
+генерируемых
+имен
+функций / классов * /
 }
 ```
+
 ---
 
 ## Вывод
 
-В ходе выполнения лабораторной работы был создан статический сайт с использованием генератора MkDocs. Освоены основные принципы работы с Markdown-разметкой, выполнена настройка темы Material и кастомизация внешнего вида с помощью CSS. Сайт успешно развернут на платформе GitHub Pages и доступен по ссылке.
+В ходе выполнения лабораторной работы был создан статический сайт с использованием генератора MkDocs. Освоены основные
+принципы работы с Markdown-разметкой, выполнена настройка темы Material и кастомизация внешнего вида с помощью CSS. Сайт успешно развернут на платформе GitHub Pages и доступен по ссылке.
 
