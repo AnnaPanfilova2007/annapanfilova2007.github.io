@@ -1,10 +1,13 @@
 site_name: Панфилова Анна Константиновна
 site_url: https://твой-сайт.ru
+nav:
+  - Об авторе: index.md
+  - Лабораторная работа 1: labs/Laba_1.md
 theme:
   name: material
   palette:
     - scheme: default
-      primary: white       # или blue, indigo
+      primary: white
       accent: teal
       toggle:
         icon: material/brightness-7

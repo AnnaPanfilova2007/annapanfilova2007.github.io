@@ -1,20 +1,14 @@
-# Лабораторные работы
 
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+# Панфилова Анна
 
-<div class="project-card">
+Факультет: Нейротехнологии и программирование  
+Группа: Р3121
 
-# Home
+---
 
-### Лабораторная работа 1
+## 🧭 Полезные ссылки
 
-Описание первой работы.  
-Первая лабораторная работа по теме "Основы программирования".
+Github: [https://github.com/annapanfilova](https://github.com/annapanfilova "Здесь все мои наработки")  
+Sourcecraft: скоро появится
 
-**Технологии:** Python, Jupyter Notebook
-
-[Посмотреть проект →](link1)
-
-</div>
-
-</div>
+---
