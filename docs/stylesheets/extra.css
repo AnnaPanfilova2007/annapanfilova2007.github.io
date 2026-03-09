@@ -708,3 +708,67 @@
 [data-md-color-scheme="slate"] .md-header__button[for="__palette_2"] {
     color: #ff9999 !important;
 }
+
+/* Глобальные настройки переноса */
+:root {
+    --md-text-overflow-wrap: break-word;
+}
+
+/* Основной контент */
+.md-content {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto; /* автоматические дефисы при переносе */
+}
+
+/* Заголовки */
+.md-content h1,
+.md-content h2,
+.md-content h3,
+.md-content h4 {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: none; /* для заголовков дефисы лучше отключить */
+}
+
+/* Ссылки */
+.md-content a {
+    overflow-wrap: break-word;
+    word-break: break-all; /* для длинных URL */
+}
+
+/* Код */
+.md-typeset pre code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Таблицы */
+.md-typeset table {
+    display: block;
+    overflow-x: auto;
+    white-space: normal;
+}
+
+.md-typeset table td,
+.md-typeset table th {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    min-width: 100px;
+    max-width: 300px;
+}
+
+/* Боковое меню */
+.md-nav__link {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+
+/* Для элементов с очень длинными именами */
+.doc-object-name {
+    word-break: break-all; /* для автоматически генерируемых имен функций/классов */
+}
