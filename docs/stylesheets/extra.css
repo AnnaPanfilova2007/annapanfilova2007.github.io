@@ -709,66 +709,206 @@
     color: #ff9999 !important;
 }
 
-/* Глобальные настройки переноса */
-:root {
-    --md-text-overflow-wrap: break-word;
+/*медиа запросы*/
+/* ===== АДАПТИВНЫЙ ДИЗАЙН ===== */
+
+/* Планшеты и маленькие ноутбуки (до 1024px) */
+@media screen and (max-width: 1024px) {
+    /* Основной текст */
+    .md-content p,
+    .md-content li {
+        font-size: 0.95rem;
+    }
+
+    /* Заголовки */
+    .md-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .md-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .md-content h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Контентная область */
+    .md-content {
+        padding: 30px !important;
+    }
 }
 
-/* Основной контент */
-.md-content {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto; /* автоматические дефисы при переносе */
+/* Планшеты (до 768px) */
+@media screen and (max-width: 768px) {
+    /* Основной текст */
+    .md-content p,
+    .md-content li {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    /* Заголовки */
+    .md-content h1 {
+        font-size: 2rem;
+    }
+
+    .md-content h1::before {
+        font-size: 1.8rem;
+    }
+
+    .md-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .md-content h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Контентная область */
+    .md-content {
+        padding: 25px !important;
+        margin: 15px;
+    }
+
+    /* Карточки проектов */
+    .project-card {
+        padding: 25px;
+    }
+
+    .project-card h3 {
+        font-size: 1.4rem;
+    }
+
+    /* Таблицы */
+    .md-typeset table {
+        font-size: 0.9rem;
+    }
+
+    /* Код */
+    .md-typeset code {
+        font-size: 0.85rem;
+    }
 }
 
-/* Заголовки */
-.md-content h1,
-.md-content h2,
-.md-content h3,
-.md-content h4 {
-    overflow-wrap: break-word;
-    word-break: break-word;
-    hyphens: none; /* для заголовков дефисы лучше отключить */
+/* Телефоны (до 480px) */
+@media screen and (max-width: 480px) {
+    /* Основной текст */
+    .md-content p,
+    .md-content li {
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+    /* Заголовки */
+    .md-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .md-content h1::before {
+        font-size: 1.5rem;
+        content: "✦";
+    }
+
+    .md-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .md-content h2::after {
+        width: 40px;
+    }
+
+    .md-content h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Контентная область */
+    .md-content {
+        padding: 20px !important;
+        margin: 10px;
+        border-radius: 16px;
+    }
+
+    /* Карточки проектов */
+    .project-card {
+        padding: 20px;
+    }
+
+    .project-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .project-card p {
+        font-size: 0.85rem;
+    }
+
+    .project-card .md-button {
+        padding: 8px 20px !important;
+        font-size: 0.85rem !important;
+    }
+
+    /* Цитаты */
+    .md-content blockquote {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    /* Таблицы */
+    .md-typeset table {
+        font-size: 0.8rem;
+    }
+
+    .md-typeset table th,
+    .md-typeset table td {
+        padding: 8px 10px;
+    }
+
+    /* Код */
+    .md-typeset pre {
+        font-size: 0.8rem;
+    }
+
+    .md-typeset code {
+        font-size: 0.8rem;
+        padding: 2px 5px;
+    }
+
+    /* Украшения */
+    .md-content::after {
+        font-size: 1rem;
+        margin-top: 30px;
+    }
+
+    /* Профиль на главной */
+    .profile-info p {
+        font-size: 0.95rem;
+    }
+
+    .profile-info strong {
+        min-width: 120px;
+    }
 }
 
-/* Ссылки */
-.md-content a {
-    overflow-wrap: break-word;
-    word-break: break-all; /* для длинных URL */
-}
+/* Очень маленькие телефоны (до 360px) */
+@media screen and (max-width: 360px) {
+    .md-content h1 {
+        font-size: 1.5rem;
+    }
 
-/* Код */
-.md-typeset pre code {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    overflow-x: auto;
-    max-width: 100%;
-    box-sizing: border-box;
-}
+    .md-content h2 {
+        font-size: 1.2rem;
+    }
 
-/* Таблицы */
-.md-typeset table {
-    display: block;
-    overflow-x: auto;
-    white-space: normal;
-}
+    .md-content p,
+    .md-content li {
+        font-size: 0.8rem;
+    }
 
-.md-typeset table td,
-.md-typeset table th {
-    overflow-wrap: break-word;
-    word-break: break-word;
-    min-width: 100px;
-    max-width: 300px;
-}
+    .profile-info p {
+        font-size: 0.85rem;
+    }
 
-/* Боковое меню */
-.md-nav__link {
-    overflow-wrap: break-word;
-    word-break: break-word;
-    white-space: normal;
-}
-
-/* Для элементов с очень длинными именами */
-.doc-object-name {
-    word-break: break-all; /* для автоматически генерируемых имен функций/классов */
+    .profile-info strong {
+        min-width: 100px;
+    }
 }
