@@ -1,0 +1,914 @@
+/* ===== БЕЛО-РОЗОВО-БЕЖЕВАЯ ТЕМА ДЛЯ MKDOСS ===== */
+
+/* ----- ПЕРЕМЕННЫЕ ЦВЕТОВ ----- */
+:root {
+    --soft-pink: #f9e6e6;           /* очень светлый розовый */
+    --dusty-rose: #d4a5a5;          /* приглушенный розовый */
+    --warm-beige: #f5e6d3;          /* теплый бежевый */
+    --cream: #fff9f0;                /* кремовый */
+    --taupe: #b7a9a9;                /* серо-бежевый */
+    --soft-brown: #8b7a7a;           /* мягкий коричневый */
+    --blush: #ffe4e1;                /* румянец */
+    --ivory: #fffff0;                 /* слоновая кость */
+}
+
+/* ===== ОСНОВНЫЕ ЭЛЕМЕНТЫ ===== */
+
+/* Фон всей страницы */
+.md-main {
+    background-color: var(--cream);
+}
+
+/* Контентная область */
+.md-content {
+    background-color: white;
+    border-radius: 24px;
+    padding: 40px !important;
+    margin: 20px;
+    box-shadow: 0 10px 40px rgba(212, 165, 165, 0.15);
+    border: 1px solid rgba(212, 165, 165, 0.1);
+}
+
+/* ===== ШАПКА САЙТА ===== */
+
+.md-header {
+    background: linear-gradient(105deg,
+        #e8c1c1 0%,
+        #d4a5a5 40%,
+        #c49a9a 100%) !important;
+    box-shadow: 0 4px 20px rgba(212, 165, 165, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.md-header__title {
+    color: white !important;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Кнопки в шапке */
+.md-header__button {
+    color: white !important;
+}
+
+.md-header__button:hover {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+    border-radius: 50%;
+}
+
+/* Логотип/название сайта */
+.md-header__topic {
+    color: white !important;
+    font-weight: 400;
+}
+
+/* ===== БОКОВАЯ НАВИГАЦИЯ ===== */
+
+/* Контейнер бокового меню */
+.md-sidebar--primary .md-sidebar__scrollwrap {
+    background-color: rgba(255, 249, 240, 0.7);
+    border-radius: 20px;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+/* Заголовки разделов в меню */
+.md-nav__title {
+    color: var(--soft-brown) !important;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.8rem;
+    padding-left: 20px !important;
+}
+
+/* Ссылки в меню */
+.md-nav__link {
+    color: var(--taupe) !important;
+    border-left: 3px solid transparent;
+    padding: 8px 0 8px 20px !important;
+    margin: 2px 0;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.md-nav__link:hover {
+    color: var(--dusty-rose) !important;
+    border-left-color: var(--dusty-rose);
+    background: linear-gradient(90deg, var(--soft-pink) 0%, transparent 90%);
+}
+
+.md-nav__link--active {
+    color: var(--dusty-rose) !important;
+    font-weight: 500 !important;
+    border-left-color: var(--dusty-rose);
+    background: linear-gradient(90deg, var(--soft-pink) 0%, transparent 90%);
+}
+
+/* Вложенные пункты меню */
+.md-nav__item .md-nav__link {
+    padding-left: 35px !important;
+}
+
+/* ===== ТИПОГРАФИКА ===== */
+
+/* Заголовок первого уровня */
+.md-content h1 {
+    color: var(--soft-brown) !important;
+    font-weight: 350 !important;
+    font-size: 2.5rem;
+    border-bottom: 2px solid var(--soft-pink);
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+    margin-top: 0 !important;
+    letter-spacing: -0.5px;
+}
+
+.md-content h1::before {
+    content: "✦ ";
+    color: var(--dusty-rose);
+    font-size: 2rem;
+}
+
+/* Заголовок второго уровня */
+.md-content h2 {
+    color: var(--dusty-rose) !important;
+    font-weight: 400 !important;
+    font-size: 1.8rem;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    letter-spacing: -0.3px;
+}
+
+.md-content h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: var(--soft-pink);
+    margin-top: 8px;
+}
+
+/* Заголовок третьего уровня */
+.md-content h3 {
+    color: var(--taupe) !important;
+    font-weight: 400 !important;
+    font-size: 1.4rem;
+    margin-top: 30px;
+}
+
+/* Обычный текст */
+.md-content p {
+    color: #5a5a5a;
+    line-height: 1.9;
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+/* Выделенный текст */
+.md-content strong {
+    color: var(--soft-brown);
+    font-weight: 500;
+}
+
+.md-content em {
+    color: var(--dusty-rose);
+}
+
+/* Ссылки в тексте */
+.md-content a {
+    color: var(--dusty-rose) !important;
+    text-decoration: none;
+    border-bottom: 1px dashed var(--soft-pink);
+    transition: all 0.2s ease;
+    font-weight: 400;
+}
+
+.md-content a:hover {
+    color: var(--soft-brown) !important;
+    border-bottom-color: var(--soft-brown);
+}
+
+/* ===== КАРТОЧКИ ДЛЯ ПРОЕКТОВ ===== */
+
+.project-card {
+    background: white;
+    border-radius: 28px;
+    padding: 30px;
+    margin: 25px 0;
+    box-shadow: 0 8px 25px rgba(212, 165, 165, 0.1);
+    border: 1px solid var(--soft-pink);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--dusty-rose), var(--soft-pink));
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 35px rgba(212, 165, 165, 0.2);
+    border-color: var(--dusty-rose);
+}
+
+.project-card h3 {
+    margin-top: 0 !important;
+    color: var(--dusty-rose) !important;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.project-card h3 a {
+    border-bottom: none !important;
+}
+
+.project-card p {
+    color: #6a6a6a;
+    line-height: 1.7;
+}
+
+/* Кнопки в карточках */
+.project-card .md-button,
+.project-card button {
+    background: linear-gradient(105deg, var(--soft-pink), white) !important;
+    color: var(--soft-brown) !important;
+    border: 1.5px solid var(--dusty-rose) !important;
+    border-radius: 40px !important;
+    padding: 10px 28px !important;
+    font-size: 0.95rem !important;
+    font-weight: 400 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 10px rgba(212, 165, 165, 0.1);
+}
+
+.project-card .md-button:hover {
+    background: linear-gradient(105deg, var(--dusty-rose), #c49a9a) !important;
+    color: white !important;
+    border-color: var(--dusty-rose) !important;
+    box-shadow: 0 6px 15px rgba(212, 165, 165, 0.25);
+    transform: scale(1.02);
+}
+
+/* ===== СПИСКИ ===== */
+
+.md-content ul, .md-content ol {
+    padding-left: 25px;
+}
+
+.md-content li {
+    color: #5a5a5a;
+    margin: 10px 0;
+    line-height: 1.8;
+    position: relative;
+}
+
+.md-content ul li::marker {
+    color: var(--dusty-rose);
+}
+
+.md-content ol li::marker {
+    color: var(--dusty-rose);
+    font-weight: 400;
+}
+
+/* ===== ЦИТАТЫ ===== */
+
+.md-content blockquote {
+    border-left: 4px solid var(--dusty-rose);
+    background: var(--soft-pink);
+    padding: 15px 25px;
+    border-radius: 0 20px 20px 0;
+    margin: 25px 0;
+    color: var(--soft-brown);
+    font-style: italic;
+}
+
+/* ===== ТАБЛИЦЫ ===== */
+
+.md-typeset table:not([class]) {
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(212, 165, 165, 0.1);
+    border: 1px solid var(--soft-pink);
+}
+
+.md-typeset table:not([class]) th {
+    background: linear-gradient(105deg, var(--soft-pink), #ffe4e1);
+    color: var(--soft-brown);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 15px 20px;
+}
+
+.md-typeset table:not([class]) td {
+    border-top: 1px solid var(--soft-pink);
+    padding: 12px 20px;
+    color: #5a5a5a;
+}
+
+.md-typeset table:not([class]) tr:hover td {
+    background-color: rgba(249, 230, 230, 0.3);
+}
+
+/* ===== КОД ===== */
+
+/* Блоки кода */
+.md-typeset pre {
+    border-radius: 16px;
+    border: 1px solid var(--soft-pink);
+    background: #faf7f2 !important;
+}
+
+.md-typeset code {
+    color: var(--soft-brown);
+    background: var(--soft-pink);
+    border-radius: 8px;
+    padding: 3px 8px;
+    font-size: 0.9rem;
+}
+
+/* Кнопка копирования кода */
+.md-clipboard {
+    color: var(--dusty-rose) !important;
+}
+
+.md-clipboard:hover {
+    color: var(--soft-brown) !important;
+}
+
+/* ===== ПОИСК ===== */
+
+.md-search__form {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border-radius: 40px !important;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.md-search__input::placeholder {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.md-search-result__link {
+    border-radius: 12px !important;
+}
+
+.md-search-result__link:hover {
+    background-color: var(--soft-pink) !important;
+}
+
+.md-search-result__more summary {
+    color: var(--dusty-rose) !important;
+}
+
+/* ===== ПОДВАЛ ===== */
+
+.md-footer {
+    background: linear-gradient(135deg,
+        #b7a9a9 0%,
+        #d4a5a5 100%) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.md-footer-nav {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.md-footer-meta {
+    background-color: rgba(139, 122, 122, 0.5) !important;
+}
+
+.md-footer-copyright {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.md-footer-copyright a {
+    color: white !important;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+}
+
+/* ===== КНОПКИ ПЕРЕКЛЮЧЕНИЯ ТЕМ ===== */
+
+.md-header__option {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 2px;
+}
+
+/* ===== АНИМАЦИИ ===== */
+
+.md-content {
+    animation: fadeSlideUp 0.6s ease-out;
+}
+
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-card {
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ===== УКРАШЕНИЯ ===== */
+
+/* Легкие точки на фоне */
+.md-main::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: radial-gradient(var(--soft-pink) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+/* Декоративный элемент внизу страницы */
+.md-content::after {
+    content: "✦ ✦ ✦";
+    display: block;
+    text-align: center;
+    color: var(--soft-pink);
+    font-size: 1.2rem;
+    letter-spacing: 8px;
+    margin-top: 50px;
+    opacity: 0.6;
+}
+
+/* ===== ЧЕРНО-РОЗОВАЯ ТЕМА (при переключении на темную) ===== */
+
+[data-md-color-scheme="slate"] {
+    --md-default-bg-color: #1a1a1a;        /* глубокий черный фон */
+    --md-default-fg-color: #f0e6e6;        /* светлый текст */
+    --md-default-fg-color--light: #b3a3a3;
+    --md-primary-fg-color: #c43e3e;        /* насыщенный розовый */
+    --md-accent-fg-color: #ff6b6b;          /* яркий розовый */
+}
+
+/* Общий фон */
+[data-md-color-scheme="slate"] .md-main {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d1a1a 100%);
+}
+
+/* Контентная область */
+[data-md-color-scheme="slate"] .md-content {
+    background-color: #242424;
+    border: 1px solid #ffb3b3;
+    box-shadow: 0 10px 40px rgba(196, 62, 62, 0.15);
+}
+
+/* Шапка сайта в темной теме */
+[data-md-color-scheme="slate"] .md-header {
+    background: linear-gradient(105deg,
+        #2d0f0f 0%,
+        #3d1a1a 40%,
+        #2d1a1a 100%) !important;
+    border-bottom: 1px solid #c43e3e;
+    box-shadow: 0 4px 20px rgba(196, 62, 62, 0.3);
+}
+
+/* Текст в шапке */
+[data-md-color-scheme="slate"] .md-header__title {
+    color: #ffb3b3 !important;
+    text-shadow: 0 0 10px rgba(196, 62, 62, 0.5);
+}
+
+/* Боковое меню */
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-sidebar__scrollwrap {
+    background-color: rgba(36, 36, 36, 0.9);
+}
+
+[data-md-color-scheme="slate"] .md-nav__title {
+    color: #c43e3e !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link {
+    color: #b3a3a3 !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link:hover {
+    color: #ff6b6b !important;
+    border-left-color: #c43e3e;
+    background: linear-gradient(90deg, #3d1a1a 0%, transparent 90%);
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active {
+    color: #ff6b6b !important;
+    border-left-color: #c43e3e;
+    background: linear-gradient(90deg, #3d1a1a 0%, transparent 90%);
+}
+
+/* Заголовки */
+[data-md-color-scheme="slate"] .md-content h1 {
+    color: #ffb3b3 !important;
+    border-bottom-color: #3d2a2a;
+}
+
+[data-md-color-scheme="slate"] .md-content h1::before {
+    color: #c43e3e;
+}
+
+[data-md-color-scheme="slate"] .md-content h2 {
+    color: #ff9999 !important;
+}
+
+[data-md-color-scheme="slate"] .md-content h2::after {
+    background: #3d2a2a;
+}
+
+[data-md-color-scheme="slate"] .md-content h3 {
+    color: #b36666 !important;
+}
+
+/* Текст */
+[data-md-color-scheme="slate"] .md-content p,
+[data-md-color-scheme="slate"] .md-content li {
+    color: #d9d9d9;
+}
+
+[data-md-color-scheme="slate"] .md-content strong {
+    color: #ffb3b3;
+}
+
+[data-md-color-scheme="slate"] .md-content em {
+    color: #ff9999;
+}
+
+/* Ссылки */
+[data-md-color-scheme="slate"] .md-content a {
+    color: #ff9999 !important;
+    border-bottom-color: #4d3333;
+}
+
+[data-md-color-scheme="slate"] .md-content a:hover {
+    color: #ff4d4d !important;
+    border-bottom-color: #c43e3e;
+}
+
+/* Карточки проектов */
+[data-md-color-scheme="slate"] .project-card {
+    background: #242424;
+    border: 1px solid #3d2a2a;
+    box-shadow: 0 8px 25px rgba(196, 62, 62, 0.15);
+}
+
+[data-md-color-scheme="slate"] .project-card::before {
+    background: linear-gradient(90deg, #c43e3e, #ff6b6b);
+}
+
+[data-md-color-scheme="slate"] .project-card:hover {
+    border-color: #c43e3e;
+    box-shadow: 0 20px 35px rgba(196, 62, 62, 0.25);
+}
+
+[data-md-color-scheme="slate"] .project-card h3 {
+    color: #ff9999 !important;
+}
+
+[data-md-color-scheme="slate"] .project-card p {
+    color: #b3a3a3;
+}
+
+/* Кнопки в карточках */
+[data-md-color-scheme="slate"] .project-card .md-button {
+    background: linear-gradient(105deg, #2d1a1a, #242424) !important;
+    color: #ff9999 !important;
+    border-color: #c43e3e !important;
+}
+
+[data-md-color-scheme="slate"] .project-card .md-button:hover {
+    background: linear-gradient(105deg, #c43e3e, #ff6b6b) !important;
+    color: white !important;
+    box-shadow: 0 6px 15px rgba(196, 62, 62, 0.4);
+}
+
+/* Цитаты */
+[data-md-color-scheme="slate"] .md-content blockquote {
+    border-left-color: #c43e3e;
+    background: #2d1a1a;
+    color: #ffb3b3;
+}
+
+/* Таблицы */
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) {
+    border-color: #3d2a2a;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+    background: linear-gradient(105deg, #2d1a1a, #1a0f0f);
+    color: #ffb3b3;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td {
+    border-top-color: #3d2a2a;
+    color: #d9d9d9;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:hover td {
+    background-color: #2d1a1a;
+}
+
+/* Код */
+[data-md-color-scheme="slate"] .md-typeset pre {
+    background: #2d2d2d !important;
+    border-color: #3d2a2a;
+}
+
+[data-md-color-scheme="slate"] .md-typeset code {
+    background: #3d1a1a;
+    color: #ffb3b3;
+}
+
+/* Поиск */
+[data-md-color-scheme="slate"] .md-search__form {
+    background-color: #3d2a2a !important;
+    border-color: #c43e3e;
+}
+
+[data-md-color-scheme="slate"] .md-search-result__link {
+    color: #ffb3b3 !important;
+}
+
+[data-md-color-scheme="slate"] .md-search-result__link:hover {
+    background-color: #3d1a1a !important;
+}
+
+[data-md-color-scheme="slate"] .md-search-result__article--document::before {
+    color: #c43e3e !important;
+}
+
+[data-md-color-scheme="slate"] .md-search-result__more summary {
+    color: #ff9999 !important;
+}
+
+/* Подвал */
+[data-md-color-scheme="slate"] .md-footer {
+    background: linear-gradient(135deg,
+        #1a0f0f 0%,
+        #2d1a1a 100%) !important;
+    border-top-color: #c43e3e;
+}
+
+[data-md-color-scheme="slate"] .md-footer-meta {
+    background-color: #0f0f0f !important;
+}
+
+[data-md-color-scheme="slate"] .md-footer-copyright {
+    color: #b36666 !important;
+}
+
+[data-md-color-scheme="slate"] .md-footer-copyright a {
+    color: #ff9999 !important;
+}
+
+/* Украшения */
+[data-md-color-scheme="slate"] .md-main::before {
+    background-image: radial-gradient(#c43e3e 1px, transparent 1px);
+    opacity: 0.15;
+}
+
+[data-md-color-scheme="slate"] .md-content::after {
+    color: #3d2a2a;
+}
+
+/* Свитчер темы (кнопка переключения) */
+[data-md-color-scheme="slate"] .md-header__option {
+    background-color: #3d2a2a;
+}
+
+[data-md-color-scheme="slate"] .md-header__button[for="__palette_2"] {
+    color: #ff9999 !important;
+}
+
+/*медиа запросы*/
+/* ===== АДАПТИВНЫЙ ДИЗАЙН ===== */
+
+/* Планшеты и маленькие ноутбуки (до 1024px) */
+@media screen and (max-width: 1024px) {
+    /* Основной текст */
+    .md-content p,
+    .md-content li {
+        font-size: 0.95rem;
+    }
+
+    /* Заголовки */
+    .md-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .md-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .md-content h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Контентная область */
+    .md-content {
+        padding: 30px !important;
+    }
+}
+
+/* Планшеты (до 768px) */
+@media screen and (max-width: 768px) {
+    /* Основной текст */
+    .md-content p,
+    .md-content li {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    /* Заголовки */
+    .md-content h1 {
+        font-size: 2rem;
+    }
+
+    .md-content h1::before {
+        font-size: 1.8rem;
+    }
+
+    .md-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .md-content h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Контентная область */
+    .md-content {
+        padding: 25px !important;
+        margin: 15px;
+    }
+
+    /* Карточки проектов */
+    .project-card {
+        padding: 25px;
+    }
+
+    .project-card h3 {
+        font-size: 1.4rem;
+    }
+
+    /* Таблицы */
+    .md-typeset table {
+        font-size: 0.9rem;
+    }
+
+    /* Код */
+    .md-typeset code {
+        font-size: 0.85rem;
+    }
+}
+
+/* Телефоны (до 480px) */
+@media screen and (max-width: 480px) {
+    /* Основной текст */
+    .md-content p,
+    .md-content li {
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+    /* Заголовки */
+    .md-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .md-content h1::before {
+        font-size: 1.5rem;
+        content: "✦";
+    }
+
+    .md-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .md-content h2::after {
+        width: 40px;
+    }
+
+    .md-content h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Контентная область */
+    .md-content {
+        padding: 20px !important;
+        margin: 10px;
+        border-radius: 16px;
+    }
+
+    /* Карточки проектов */
+    .project-card {
+        padding: 20px;
+    }
+
+    .project-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .project-card p {
+        font-size: 0.85rem;
+    }
+
+    .project-card .md-button {
+        padding: 8px 20px !important;
+        font-size: 0.85rem !important;
+    }
+
+    /* Цитаты */
+    .md-content blockquote {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    /* Таблицы */
+    .md-typeset table {
+        font-size: 0.8rem;
+    }
+
+    .md-typeset table th,
+    .md-typeset table td {
+        padding: 8px 10px;
+    }
+
+    /* Код */
+    .md-typeset pre {
+        font-size: 0.8rem;
+    }
+
+    .md-typeset code {
+        font-size: 0.8rem;
+        padding: 2px 5px;
+    }
+
+    /* Украшения */
+    .md-content::after {
+        font-size: 1rem;
+        margin-top: 30px;
+    }
+
+    /* Профиль на главной */
+    .profile-info p {
+        font-size: 0.95rem;
+    }
+
+    .profile-info strong {
+        min-width: 120px;
+    }
+}
+
+/* Очень маленькие телефоны (до 360px) */
+@media screen and (max-width: 360px) {
+    .md-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .md-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .md-content p,
+    .md-content li {
+        font-size: 0.8rem;
+    }
+
+    .profile-info p {
+        font-size: 0.85rem;
+    }
+
+    .profile-info strong {
+        min-width: 100px;
+    }
+}
