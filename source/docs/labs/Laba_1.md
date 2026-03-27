@@ -1,7 +1,7 @@
 # Создание статического сайта
 
 Сайт: [https://annapanfilova2007.github.io/](https://annapanfilova2007.github.io/)  
-Репозиторий: [https://github.com/AnnaPanfilova2007/annapanfilova2007.github.io](https://github.com/AnnaPanfilova2007/annapanfilova2007.github.io)
+Репозиторий GitHab: [https://github.com/AnnaPanfilova2007/annapanfilova2007.github.io](https://github.com/AnnaPanfilova2007/annapanfilova2007.github.io)
 ---
 
 ## Цель

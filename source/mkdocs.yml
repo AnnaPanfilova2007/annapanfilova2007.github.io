@@ -4,6 +4,7 @@ nav:
   - Об авторе: index.md
   - Лабораторная работа 1: labs/Laba_1.md
   - Лабораторная работа 2: labs/Laba_2.md
+  - Лабораторная работа 2: labs/Laba_3.md
 theme:
   name: material
   palette:
